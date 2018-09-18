@@ -49,15 +49,15 @@ public class BangBangController implements UltrasonicController {
 		//if we are closer than our closest allowed distance, we will rotate in spot (spin right backwards)
 		if(distance < bandCenter - bandWidth){
 			if(distance <= ClosestDistanceRotate){
-				WallFollowingLab.leftMotor.setSpeed(motorHigh);				//set the speed to the lower speed (both motors)
-				WallFollowingLab.rightMotor.setSpeed(motorLow);				
+				WallFollowingLab.leftMotor.setSpeed(motorLow);				//set the speed to the lower speed (both motors)
+				WallFollowingLab.rightMotor.setSpeed(motorHigh);				
 				WallFollowingLab.leftMotor.forward();						// Spin left motor forward
 				WallFollowingLab.rightMotor.backward();		
 			// spin right motor BACKWARDS. This will rotate in space
 			}
 			else if (distance < 5){
 				WallFollowingLab.leftMotor.setSpeed(motorHigh);
-				WallFollowingLab.rightMotor.setSpeed(motorLow);
+				WallFollowingLab.rightMotor.setSpeed(motorHigh);
 				WallFollowingLab.leftMotor.backward();
 				WallFollowingLab.rightMotor.backward();
 				

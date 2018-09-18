@@ -53,7 +53,7 @@ public class PController implements UltrasonicController {
       this.error= (bandCenter - bandWidth);
       if ( distance < error){
     	  if (distance< ClosestDistanceRotate){
-    		  WallFollowingLab.leftMotor.setSpeed(MOTOR_SPEED + 8* error);
+    		  WallFollowingLab.leftMotor.setSpeed(MOTOR_SPEED + 6* error);
         	  WallFollowingLab.rightMotor.setSpeed(MOTOR_SPEED - 4 * Math.abs (error));
         	  WallFollowingLab.leftMotor.forward();
         	  WallFollowingLab.rightMotor.backward();

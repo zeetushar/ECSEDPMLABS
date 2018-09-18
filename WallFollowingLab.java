@@ -16,8 +16,8 @@ public class WallFollowingLab {
 		 ; // Width of dead band (cm)
   private static final int motorLow = 100; // Speed of slower rotating wheel (deg/sec)
   private static final int motorHigh = 260;
-  // Speed of the faster rotating wheel (deg/seec)
-  private static final int ClosestDistanceRotate= 11;
+  // Speed of the faster rotating wheel (deg/sec)
+  private static final int ClosestDistanceRotate= 18;
   
 
   private static final Port usPort = LocalEV3.get().getPort("S1");

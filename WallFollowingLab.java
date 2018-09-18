@@ -1,11 +1,12 @@
 package ca.mcgill.ecse211.wallfollowing;
 
-import lejos.hardware.sensor.*;
+import lejos.hardware.Button;
 import lejos.hardware.ev3.LocalEV3;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 import lejos.hardware.port.Port;
+import lejos.hardware.sensor.EV3UltrasonicSensor;
+import lejos.hardware.sensor.SensorModes;
 import lejos.robotics.SampleProvider;
-import lejos.hardware.Button;
 
 public class WallFollowingLab {
 
